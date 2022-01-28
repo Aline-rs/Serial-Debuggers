@@ -1,0 +1,49 @@
+Funcionalidade: Login na plataforma
+
+Cenario: login válido
+Dado que o usuário está na tela de login
+Quando digita seu e-mail e senha cadastrados
+Então ele deve conseguir acessar a plataforma
+
+----------------//-----------------------
+
+Funcionalidade: Registro na plataforma
+
+Cenario: registro válido
+Dado que o usuário está na tela de registro
+Quando digita os dados válidos
+Então ele deve conseguir se cadastrar na plataforma
+
+----------------//-----------------------
+Funcionalidade: Adicionar produto ao carrinho
+
+Cenario: Produto adicionado
+Dado que o usuário está na tela de produtos
+Quando ele clica em adicionar
+Então o item deve ir para o carrinho de compras
+
+----------------//----------------------
+Funcionalidade: Realizar checkout
+
+Cenario: Finalizando compra
+Dado que o usuário está na tela de checkout
+E o mesmo confirma seus dados
+Quando ele clica em confirmar
+Então a compra é finalizada com sucesso
+
+--------------//------------------------
+Funcionalidade: Logout
+
+Cenario: Finalizando sessão
+Dado que o usuário está em qualquer tela
+Quando ele clicar em logout
+Então seu acesso é encerrado
+
+
+
+
+
+DADO - GIVEN
+QUANDO - WHEN
+ENTÃO - THAN
+E - AND
