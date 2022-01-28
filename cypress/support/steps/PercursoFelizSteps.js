@@ -1,4 +1,4 @@
-/* /* global Given, Then, When */
+/* /* /* global Given, Then, When */
 
 import LoginPage from '../pageobjects/LoginPage'
 const loginPage = new LoginPage
@@ -17,4 +17,4 @@ And("clica em login", () =>{
 
 Then("ele deve conseguir acessar a plataforma", () => {
     loginPage.loginOK();
-})
+}) 

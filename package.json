@@ -1,5 +1,5 @@
 {
-  "name": "teste-qa",
+  "name": "serial-debuggers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,10 @@
     "cypress:open": "cypress open"
 },
     "cypress-cucumber-preprocessor": {
-      "step_definitions": "cypress/support/steps"
+      "step_definitions": "cypress/support/steps",
+      "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true
+      }
   },
   "keywords": [],
   "author": "",
