@@ -21,7 +21,7 @@ Jefferson
 Todo o teste foi realizado na plataforma [NopCommerce](https://demo.nopcommerce.com).
 
 - ``Cadastro``
-- ``Login`
+- ``Login``
 - ``Adicionar item ao carrinho``
 - ``Finalização da compra``
 
