@@ -15,7 +15,7 @@ Given("que o usuario acessa o site", () => {
 })
 And("realiza o registro", () => {
     registroPage.clicarBotaoRegistro();
-    registroPage.dadosRegistro("Aline", "Rosa", "8", "February", "1999","teste0043@gmail.com", "Anima","123456");
+    registroPage.dadosRegistro("Aline", "Rosa", "8", "February", "1999","teste00743@gmail.com", "Anima","123456");
     registroPage.botaoRegistro();
 })
 And("vai ate o produto desejado e adiciona ao carrinho", () =>{

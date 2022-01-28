@@ -9,8 +9,11 @@ class CarrinhoPage{
     }
 
     botaoCheckout(){
-        cy.get(carrinhoElements.botaoTermos).contains('service').click({force: true});
-    }
+    /*     cy.get(carrinhoElements.botaoTermos).check(); */
+        cy.get(carrinhoElements.botaoCheckout).contains('Checkout').click({force: true});
+
+}
+
 }
 
 export default CarrinhoPage;

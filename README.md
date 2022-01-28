@@ -7,7 +7,7 @@ Equipe criada para o desafio proposto pelo projeto Ânima Reskilling QA.
 * Aline Galli
 * Aline Rosa
 * Henrique de Bem
-* Jefferson
+* Jefferson Machado
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
