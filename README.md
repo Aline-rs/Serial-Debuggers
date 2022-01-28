@@ -12,7 +12,7 @@ Equipe criada para o desafio proposto pelo projeto Ânima Reskilling QA.
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - ``Vscode``
-- ``Cypress`
+- ``Cypress``
 - ``Cucumber``
 - ``JavaScript``
 
