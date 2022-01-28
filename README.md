@@ -4,10 +4,10 @@ Equipe criada para o desafio proposto pelo projeto Ânima Reskilling QA.
 
 ## Integrantes
 
-Aline Galli
-Aline Rosa
-Henrique de Bem
-Jefferson
+* Aline Galli
+* Aline Rosa
+* Henrique de Bem
+* Jefferson
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
