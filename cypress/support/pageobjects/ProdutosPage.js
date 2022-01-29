@@ -4,7 +4,7 @@ const produtosElements = new ProdutosElements;
 class ProdutosPage{
 
     clickCategoria() {
-        cy.get(produtosElements.botaoEletronics).contains('Computers').click();
+        cy.get(produtosElements.botaoComputers).contains('Computers').click();
     }
 
     adicionarProdutos(){

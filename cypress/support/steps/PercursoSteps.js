@@ -15,8 +15,8 @@ Given("que o usuario acessa o site", () => {
 })
 And("realiza o registro", () => {
     registroPage.clicarBotaoRegistro();
-    registroPage.dadosRegistro("Aline", "Rosa", "8", "February", "1999","teste00743@gmail.com", "Anima","123456");
-    registroPage.botaoRegistro();
+    registroPage.dadosRegistro("Aline", "Rosa", "8", "February", "1999","teste10743@gmail.com", "Anima","123456");
+    registroPage.concluirRegistro();
 })
 And("vai ate o produto desejado e adiciona ao carrinho", () =>{
     produtosPage.clickCategoria();
@@ -24,7 +24,7 @@ And("vai ate o produto desejado e adiciona ao carrinho", () =>{
 })
 When("realizar o checkout das compras", () =>{
     carrinhoPage.clickBotaoCarrinho();
-    carrinhoPage.botaoCheckout();
+    carrinhoPage.conferirCarrinho();
 })
 Then("ele deve concluir a compra com sucesso", () =>{
 

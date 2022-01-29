@@ -1,3 +1,5 @@
+//Classe que contém todos os elementos do formulário de registro.
+
 class RegistroElements{
 
     botaoRegistro = () => { return '.ico-register' }

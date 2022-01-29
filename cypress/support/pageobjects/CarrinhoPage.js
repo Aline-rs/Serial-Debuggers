@@ -8,10 +8,9 @@ class CarrinhoPage{
         cy.get(carrinhoElements.botaoCarrinho).contains('cart').click({force: true});
     }
 
-    botaoCheckout(){
-    /*     cy.get(carrinhoElements.botaoTermos).check(); */
-        cy.get(carrinhoElements.botaoCheckout).contains('Checkout').click({force: true});
-
+    conferirCarrinho(){
+        cy.get('[type=checkbox]').check({force: true})
+        cy.get(carrinhoElements.botaoCheckout).contains('Checkout').click({force: true})
 }
 
 }

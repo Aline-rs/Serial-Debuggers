@@ -11,9 +11,9 @@ class RegistroPage{
     clicarBotaoRegistro(){
         cy.get(registroElements.botaoRegistro()).click();
     }
-    //Preencher dados para registro
+    //Preenche os dados para registro
     dadosRegistro(username, lastname,dia, mes, ano, email, companhia, senha){
-        //cy.get(registroElements.botaoGeneroM()).click();
+
         cy.get(registroElements.botaoGeneroF()).click();
         cy.get(registroElements.caixaNome()).click().type(username);
         cy.get(registroElements.caixaUltimoNome()).click().type(lastname);
@@ -26,7 +26,7 @@ class RegistroPage{
         cy.get(registroElements.caixaConfirmSenha()).click().type(senha);
     }
     //Ele consegue se cadastrar na plataforma
-    botaoRegistro(){
+    concluirRegistro(){
         cy.get('#register-button').click();
     }
 }

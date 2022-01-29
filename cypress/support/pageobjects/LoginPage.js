@@ -14,8 +14,7 @@ class LoginPage {
     clicarBotaoLogin() {
         cy.get(loginElements.botaoLogin()).click();
     }
-  
-    // Verifica se o botão tem o texto "Esqueceu sua senha?"
+    // Preenche os dados de login.
     preencherDados(email, senha) {
         cy.get(loginElements.caixaEmail()).type(email)
         cy.get(loginElements.caixaSenha()).type(senha)
