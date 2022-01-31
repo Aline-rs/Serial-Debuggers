@@ -26,7 +26,7 @@ And("vai ate o produto desejado e adiciona ao carrinho", () =>{
 })
 When("realizar o checkout das compras", () =>{
     carrinhoPage.clickBotaoCarrinho();
-    cy.get('h1').should("contain", "Shopping")
+    carrinhoPage.validarCarrinho();
     carrinhoPage.conferirCarrinho();
 })
 Then("ele deve concluir a compra com sucesso", () =>{

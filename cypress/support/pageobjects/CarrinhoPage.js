@@ -12,7 +12,6 @@ class CarrinhoPage{
         cy.get(carrinhoElements.validacaoCarrinho()).should('be.visible')
     }
     
-    
     conferirCarrinho(){
         cy.get(carrinhoElements.botaoTermos()).check({force: true})
         cy.get(carrinhoElements.botaoCheckout).contains('Checkout').click({force: true})
