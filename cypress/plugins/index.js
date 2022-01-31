@@ -24,4 +24,7 @@
   module.exports = (on, config) => {
     console.log('CUCUMBER', config);
     on('file:preprocessor', cucumber());
+  },
+  {
+    "testFiles": "**/*.feature"
   }

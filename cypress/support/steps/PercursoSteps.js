@@ -12,10 +12,12 @@ const carrinhoPage = new CarrinhoPage
 
 Given("que o usuario acessa o site", () => {
     homePage.acessarSite();
+    homePage.validacaoHome();
 })
-And("realiza o registro", () => {
+And("realiza o registro {} {} {} {} {} {} {} {}", (username, lastname, dia, mes, ano, email, companhia, senha) => {
     registroPage.clicarBotaoRegistro();
-    registroPage.dadosRegistro("Aline", "Rosa", "8", "February", "1999","teste10743@gmail.com", "Anima","123456");
+    registroPage.validacaoPagRegistro();
+    registroPage.dadosRegistro(username, lastname, dia, mes, ano, email, companhia, senha);
     registroPage.concluirRegistro();
 })
 And("vai ate o produto desejado e adiciona ao carrinho", () =>{
@@ -24,6 +26,7 @@ And("vai ate o produto desejado e adiciona ao carrinho", () =>{
 })
 When("realizar o checkout das compras", () =>{
     carrinhoPage.clickBotaoCarrinho();
+    cy.get('h1').should("contain", "Shopping")
     carrinhoPage.conferirCarrinho();
 })
 Then("ele deve concluir a compra com sucesso", () =>{

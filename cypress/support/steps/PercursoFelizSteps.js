@@ -11,8 +11,8 @@ And("clica em login", () =>{
     loginPage.clicarBotaoLogin();
 })
 
- When("digita seu e-mail e senha cadastrados", () => {
-    loginPage.preencherDados("alinegalli96@gmail.com", "2102120604");
+ When("digita seu e-mail e senha cadastrados {} {}", (email, senha) => {
+    loginPage.preencherDados(email, senha);
 })
 
 Then("ele deve conseguir acessar a plataforma", () => {

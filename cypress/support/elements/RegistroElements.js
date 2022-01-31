@@ -2,6 +2,7 @@
 
 class RegistroElements{
 
+    //Formulário
     botaoRegistro = () => { return '.ico-register' }
     botaoGeneroF = () => {return '#gender-female'}
     botaoGeneroM = () => {return '#gender-male'}
@@ -14,6 +15,7 @@ class RegistroElements{
     caixaCompanhia = () => {return '#Company'}
     caixaSenha = ()=> {return '#Password'}
     caixaConfirmSenha = () => {return '#ConfirmPassword'}
-    
+
+    validacaoRegistro = () => {return 'h1'}
 }
 export default RegistroElements;

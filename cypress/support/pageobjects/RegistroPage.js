@@ -11,6 +11,10 @@ class RegistroPage{
     clicarBotaoRegistro(){
         cy.get(registroElements.botaoRegistro()).click();
     }
+
+    validacaoPagRegistro(){
+        cy.get(registroElements.validacaoRegistro()).should('be.visible')
+    }
     //Preenche os dados para registro
     dadosRegistro(username, lastname,dia, mes, ano, email, companhia, senha){
 
