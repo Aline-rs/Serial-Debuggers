@@ -14,6 +14,20 @@ class LoginPage {
     clicarBotaoLogin() {
         cy.get(loginElements.botaoLogin()).click();
     }
+    //Verifica se o user está deslogado
+    verificaBotaoLogin() {
+        cy.get(loginElements.botaoLogin()).should("be.visible")
+    }
+
+    //compara botão logout para verificar se está logado
+    clicarBotaoLogout() {
+        cy.get(loginElements.botaoLogout()).click();
+    }
+    //verifica se o user está logado
+    verificaBotaoLogout() {
+        cy.get(loginElements.botaoLogout()).should("be.visible")
+    }
+
     // Preenche os dados de login.
     preencherDados(email, senha) {
         cy.get(loginElements.caixaEmail()).type(email)

@@ -18,4 +18,5 @@ class RegistroElements{
 
     validacaoRegistro = () => {return 'h1'}
 }
+
 export default RegistroElements;

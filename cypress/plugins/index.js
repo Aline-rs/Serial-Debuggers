@@ -26,5 +26,5 @@
     on('file:preprocessor', cucumber());
   },
   {
-    "testFiles": "**/*.feature"
+    "testFiles": "*/.feature"
   }

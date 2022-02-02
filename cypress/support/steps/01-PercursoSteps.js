@@ -4,15 +4,18 @@ import RegistroPage from '../pageobjects/RegistroPage'
 import HomePage from '../pageobjects/HomePage'
 import ProdutosPage from '../pageobjects/ProdutosPage'
 import CarrinhoPage from '../pageobjects/CarrinhoPage'
+import CheckoutPage from '../pageobjects/CheckoutPage'
+import LoginPage from '../pageobjects/LoginPage'
 
 const homePage = new HomePage
 const registroPage = new RegistroPage
 const produtosPage = new ProdutosPage
 const carrinhoPage = new CarrinhoPage
+const checkoutPage = new CheckoutPage
+const loginPage = new LoginPage
 
 Given("que o usuario acessa o site", () => {
     homePage.acessarSite();
-    homePage.validacaoHome();
 })
 And("realiza o registro {} {} {} {} {} {} {} {}", (username, lastname, dia, mes, ano, email, companhia, senha) => {
     registroPage.clicarBotaoRegistro();
@@ -26,9 +29,14 @@ And("vai ate o produto desejado e adiciona ao carrinho", () =>{
 })
 When("realizar o checkout das compras", () =>{
     carrinhoPage.clickBotaoCarrinho();
-    cy.get('h1').should("contain", "Shopping")
     carrinhoPage.conferirCarrinho();
 })
-Then("ele deve concluir a compra com sucesso", () =>{
+Then("ele então deve concluir a compra com sucesso {} {} {} {} {} {} {} {} {} {} {} {} {}", (pais, seletorEstadoVar, caixaCidadeVar, caixaEndereco1Var, caixaEndereco2Var, caixaCepVar, caixaTelefoneVar, seletorTipoCartaoVar, caixaNomeDonoCartaoVar, caixaNumeroCartaoVar, seletorDataExpiraMesVar, seletorDataExpiraAnoVar, caixaCvcCartaoVar) => {
+    checkoutPage.preencherDados(pais, seletorEstadoVar, caixaCidadeVar, caixaEndereco1Var, caixaEndereco2Var, caixaCepVar, caixaTelefoneVar, seletorTipoCartaoVar, caixaNomeDonoCartaoVar, caixaNumeroCartaoVar, seletorDataExpiraMesVar, seletorDataExpiraAnoVar, caixaCvcCartaoVar);
 
+})
+
+And("deslogar da plataforma", () =>{
+    loginPage.clicarBotaoLogout();
+    loginPage.verificaBotaoLogin();
 })
