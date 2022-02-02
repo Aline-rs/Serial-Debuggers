@@ -3,6 +3,10 @@
 class CheckoutElements{
     //Elementos dos dados pessoais
     seletorPais = () => {return '#BillingNewAddress_CountryId'};
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/aline-rs
     //seletorPais = () => {return 'select'};
     seletorEstado = () => {return '#BillingNewAddress_StateProvinceId'};
     caixaCidade = () => {return '#BillingNewAddress_City'};
@@ -10,9 +14,17 @@ class CheckoutElements{
     caixaEndereco2 = () => {return '#BillingNewAddress_Address2'};
     caixaCep = () => {return '#BillingNewAddress_ZipPostalCode'};
     caixaTelefone = () => {return '#BillingNewAddress_PhoneNumber'};
+<<<<<<< HEAD
     //botões para avançar até seleção de metodo de pagamento
     botaoContinueToShipping = () => {return '#billing-buttons-container > .new-address-next-step-button'};
     botaoContinueToPayment = () => {return '#shipping-method-buttons-container > .button-1'};
+=======
+    
+    //botões para avançar até seleção de metodo de pagamento
+    botaoContinueToShipping = () => {return '#billing-buttons-container > .new-address-next-step-button'};
+    botaoContinueToPayment = () => {return '#shipping-method-buttons-container > .button-1'};
+    
+>>>>>>> origin/aline-rs
     //preenchimento dos dados do método de pagamento
     radialCreditCard = () => {return '#paymentmethod_1'};
     botaoContinueToPaymentInfo = () => {return '#payment-method-buttons-container > .button-1'};
@@ -22,6 +34,10 @@ class CheckoutElements{
     seletorDataExpiraMes = () => {return '#ExpireMonth'};
     seletorDataExpiraAno = () => {return '#ExpireYear'};
     caixaCvcCartao = () => {return '#CardCode'};
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/aline-rs
     //Botões de finalização do processo de compra
     botaoContinueToConfirmarCompra = () => {return '#payment-info-buttons-container > .button-1'};
     botaoConfirmarCompra = () => {return '#confirm-order-buttons-container > .button-1'};
